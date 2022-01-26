@@ -31,7 +31,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Receitas/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Receitas>> GetReceitas(string id)
+        public async Task<ActionResult<Receitas>> GetReceitas(int id)
         {
             var receitas = await _context.Receitas.FindAsync(id);
 
@@ -43,10 +43,40 @@ namespace ControleFinanceiro.Controllers
             return receitas;
         }
 
+        // GET: api/Receitas/{descricao}
+        [HttpGet("descricao")]
+        public async Task<ActionResult<Receitas>> GetReceitasDescription(string descricao)
+        {
+            var receitas = await _context.Receitas.Where(receitas => receitas.Description == descricao).ToListAsync() ;
+
+            if (receitas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(receitas);
+        }
+
+        // GET: api/Receitas/{ano}/{mes}}
+        [HttpGet("{ano}/{mes}")]
+        public async Task<ActionResult<Receitas>> GetReceitasData(int ano, int mes)
+        {
+            var dateInit = new DateTime(ano, mes, 01);
+            var dateFinal = dateInit.AddMonths(1).AddDays(-1).AddHours(23.999999);
+            var receitas = await _context.Receitas.Where(receitas => receitas.Date >= dateInit & receitas.Date <= dateFinal).ToListAsync();
+
+            if (receitas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(receitas);
+        }
+
         // PUT: api/Receitas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutReceitas(string id, Receitas receitas)
+        public async Task<IActionResult> PutReceitas(int id, Receitas receitas)
         {
             if (id != receitas.Id)
             {
@@ -101,7 +131,7 @@ namespace ControleFinanceiro.Controllers
 
         // DELETE: api/Receitas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteReceitas(string id)
+        public async Task<IActionResult> DeleteReceitas(int id)
         {
             var receitas = await _context.Receitas.FindAsync(id);
             if (receitas == null)
@@ -115,7 +145,7 @@ namespace ControleFinanceiro.Controllers
             return NoContent();
         }
 
-        private bool ReceitasExists(string id)
+        private bool ReceitasExists(int id)
         {
             return _context.Receitas.Any(e => e.Id == id);
         }

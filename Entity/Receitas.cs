@@ -7,7 +7,7 @@ namespace ControleFinanceiro.Entity
     public class Receitas
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         public string Description { get; set; }
 
@@ -19,7 +19,7 @@ namespace ControleFinanceiro.Entity
         {
         }
 
-        public Receitas(string id, string description, double value, DateTime date)
+        public Receitas(int id, string description, double value, DateTime date)
         {
             Id = id;
             Description = description;

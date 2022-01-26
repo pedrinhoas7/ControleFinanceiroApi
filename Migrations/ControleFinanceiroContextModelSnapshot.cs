@@ -40,6 +40,9 @@ namespace ControleFinanceiro.Migrations
                     b.Property<double>("Value")
                         .HasColumnType("float");
 
+                    b.Property<int?>("categoria")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("despesas");
@@ -47,8 +50,11 @@ namespace ControleFinanceiro.Migrations
 
             modelBuilder.Entity("ControleFinanceiro.Entity.Receitas", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");

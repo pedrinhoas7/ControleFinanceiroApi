@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ControleFinanceiro.Entity.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ControleFinanceiro.Entity
@@ -14,6 +15,8 @@ namespace ControleFinanceiro.Entity
         public double Value { get; set; }
 
         public DateTime Date { get; set; }
+
+        public CategoriaDespesas? categoria { get; set; }
 
         public Despesas()
         {

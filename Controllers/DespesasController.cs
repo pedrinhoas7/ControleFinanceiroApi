@@ -43,6 +43,36 @@ namespace ControleFinanceiro.Controllers
             return despesas;
         }
 
+        // GET: api/Despesas/{descricao}
+        [HttpGet("descricao")]
+        public async Task<ActionResult<Despesas>> GetDespesasDescription(string descricao)
+        {
+            var despesas = await _context.Despesas.Where(despesas => despesas.Description == descricao).ToListAsync();
+
+            if (despesas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(despesas);
+        }
+
+        // GET: api/Despesas/{ano}/{mes}
+        [HttpGet("{ano}/{mes}")]
+        public async Task<ActionResult<Despesas>> GetDespesasData(int ano, int mes)
+        {
+            var dateInit = new DateTime(ano,  mes , 01);
+            var dateFinal = dateInit.AddMonths(1).AddDays(-1).AddHours(23.999999);
+            var despesas = await _context.Despesas.Where(despesas => despesas.Date >= dateInit & despesas.Date <= dateFinal ).ToListAsync();
+
+            if (despesas == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(despesas);
+        }
+
         // PUT: api/Despesas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -79,6 +109,11 @@ namespace ControleFinanceiro.Controllers
         [HttpPost]
         public async Task<ActionResult<Despesas>> PostDespesas(Despesas despesas)
         {
+            if(despesas.categoria == null)
+            {
+                despesas.categoria =  Entity.Enum.CategoriaDespesas.Outras;
+            }
+
             _context.Despesas.Add(despesas);
             await _context.SaveChangesAsync();
 

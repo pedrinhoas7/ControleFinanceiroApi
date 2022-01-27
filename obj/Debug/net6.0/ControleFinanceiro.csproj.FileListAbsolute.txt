@@ -259,3 +259,4 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Debug\net6.0\Contr
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Debug\net6.0\ref\ControleFinanceiro.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Debug\net6.0\ControleFinanceiro.pdb
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Debug\net6.0\ControleFinanceiro.genruntimeconfig.cache
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Debug\net6.0\ControleFinanceiro.csproj.AssemblyReference.cache

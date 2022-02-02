@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ControleFinanceiro.Data;
 using ControleFinanceiro.Entity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ControleFinanceiro.Controllers
 {
@@ -19,6 +21,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Despesas
         [HttpGet]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<IEnumerable<Despesas>>> GetDespesas()
         {
             return await _context.Despesas.ToListAsync();
@@ -26,6 +29,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Despesas/5
         [HttpGet("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Despesas>> GetDespesas(int id)
         {
             var despesas = await _context.Despesas.FindAsync(id);
@@ -40,6 +44,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Despesas/{descricao}
         [HttpGet("descricao")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Despesas>> GetDespesasDescription(string descricao)
         {
             var despesas = await _context.Despesas.Where(despesas => despesas.Description == descricao).ToListAsync();
@@ -54,6 +59,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Despesas/{ano}/{mes}
         [HttpGet("{ano}/{mes}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Despesas>> GetDespesasData(int ano, int mes)
         {
             var dateInit = new DateTime(ano,  mes , 01);
@@ -71,6 +77,7 @@ namespace ControleFinanceiro.Controllers
         // PUT: api/Despesas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> PutDespesas(int id, Despesas despesas)
         {
             if (id != despesas.Id)
@@ -102,6 +109,7 @@ namespace ControleFinanceiro.Controllers
         // POST: api/Despesas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Despesas>> PostDespesas(Despesas despesas)
         {
             if(despesas.categoria == null)
@@ -117,6 +125,7 @@ namespace ControleFinanceiro.Controllers
 
         // DELETE: api/Despesas/5
         [HttpDelete("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> DeleteDespesas(int id)
         {
             var despesas = await _context.Despesas.FindAsync(id);

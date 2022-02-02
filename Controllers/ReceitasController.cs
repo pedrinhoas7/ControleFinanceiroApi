@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ControleFinanceiro.Data;
 using ControleFinanceiro.Entity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ControleFinanceiro.Controllers
 {
@@ -19,6 +21,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Receitas
         [HttpGet]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<IEnumerable<Receitas>>> GetReceitas()
         {
             return await _context.Receitas.ToListAsync();
@@ -26,6 +29,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Receitas/5
         [HttpGet("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Receitas>> GetReceitas(int id)
         {
             var receitas = await _context.Receitas.FindAsync(id);
@@ -40,6 +44,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Receitas/{descricao}
         [HttpGet("descricao")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Receitas>> GetReceitasDescription(string descricao)
         {
             var receitas = await _context.Receitas.Where(receitas => receitas.Description == descricao).ToListAsync() ;
@@ -54,6 +59,7 @@ namespace ControleFinanceiro.Controllers
 
         // GET: api/Receitas/{ano}/{mes}}
         [HttpGet("{ano}/{mes}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Receitas>> GetReceitasData(int ano, int mes)
         {
             var dateInit = new DateTime(ano, mes, 01);
@@ -71,6 +77,7 @@ namespace ControleFinanceiro.Controllers
         // PUT: api/Receitas/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> PutReceitas(int id, Receitas receitas)
         {
             if (id != receitas.Id)
@@ -102,6 +109,7 @@ namespace ControleFinanceiro.Controllers
         // POST: api/Receitas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<Receitas>> PostReceitas(Receitas receitas)
         {
             _context.Receitas.Add(receitas);
@@ -126,6 +134,7 @@ namespace ControleFinanceiro.Controllers
 
         // DELETE: api/Receitas/5
         [HttpDelete("{id}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<IActionResult> DeleteReceitas(int id)
         {
             var receitas = await _context.Receitas.FindAsync(id);

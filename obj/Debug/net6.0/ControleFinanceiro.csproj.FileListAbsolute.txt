@@ -15,6 +15,7 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Contr
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Humanizer.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\MessagePack.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Debug\net6.0\Microsoft.Build.Locator.dll

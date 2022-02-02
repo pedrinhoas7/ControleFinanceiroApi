@@ -15,7 +15,12 @@
       "ProjectGuid": "5113a35c-32dc-4086-8464-3d104228aff4",
       "DisplayName": "ControleFinanceiroTest",
       "ColorIndex": 1
+    },
+    "f838ac9d-5393-4f00-be68-d82292ca75b6": {
+      "ProjectGuid": "f838ac9d-5393-4f00-be68-d82292ca75b6",
+      "DisplayName": "ControleFinanceiroTest",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

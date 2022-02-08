@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
+            "Microsoft.Azure.Management.Sql.Fluent": {
+              "target": "Package",
+              "version": "[1.38.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.1, )"

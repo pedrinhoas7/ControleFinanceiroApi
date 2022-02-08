@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  app:
+    ports:
+     - 81:80
+     - 444:443
+    build:
+      context: .
+      dockerfile: Dockerfile

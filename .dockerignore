@@ -21,5 +21,13 @@
 **/obj
 **/secrets.dev.yaml
 **/values.dev.yaml
+**/.dockerignore
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/bin
+**/obj
 LICENSE
 README.md

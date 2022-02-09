@@ -8,63 +8,63 @@
 ###
 **POST** https://controlefinanceiroaluraapi.azure-api.net/api/v1/account/login HTTP/1.1 \
 Content-Type: application/json \
-body{"id":0,"username":"string","password":"string","role":"string"}
+body{"username":"admin","password":"admin","role":"manager"}
 #
 **RESUMO**
 ###
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Resumo/{ano}/{mes} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 #
 **DESPESAS**
 
 **POST** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas HTTP/1.1 \
-Authorization: Bearer TOKEN \
+Authorization: Bearer Token \
 body{"id":0,"description":"string","value":0,"date":"2019-01-06T17:16:40","categoria":0}
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas HTTP/1.1 \
- Authorization: Bearer TOKEN
+ Authorization: Bearer Token
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas/{ano}/{mes} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
   
 **DELETE** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas/{id} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas/1 HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 **PUT** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas/{id} HTTP/1.1 \
 Content-Type: application/json \
 {"id":0,"description":"string","value":0,"date":"2019-01-06T17:16:40","categoria":0}
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Despesas/descricao?descricao={descrição} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 #
 **RECEITAS**
 
 **POST** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas HTTP/1.1 \
-Authorization: Bearer TOKEN \
+Authorization: Bearer Token \
 {"id":0,"description":"string","value":0,"date":"2019-01-06T17:16:40"}
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas HTTP/1.1 \
- Authorization: Bearer TOKEN
+ Authorization: Bearer Token
   
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas/{ano}/{mes} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
   
 **DELETE** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas/{id} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas/1 HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 **PUT** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas/{id} HTTP/1.1 \
 Content-Type: application/json
 {"id":0,"description":"string","value":0,"date":"2019-01-06T17:16:40"}
 
 **GET** https://controlefinanceiroaluraapi.azure-api.net/api/Receitas/descricao?descricao={descrição} HTTP/1.1 \
-Authorization: Bearer TOKEN
+Authorization: Bearer Token
 
 
 

@@ -9,6 +9,9 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\Pub
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\MessagePack.Annotations.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Azure.Management.ResourceManager.Fluent.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Azure.Management.Sql.Fluent.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Azure.Management.Storage.Fluent.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Build.Locator.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
@@ -33,12 +36,16 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\Pub
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Identity.Client.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Rest.ClientRuntime.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.Rest.ClientRuntime.Azure.Authentication.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -73,6 +80,7 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\Pub
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\System.Security.Permissions.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\System.Windows.Extensions.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\Microsoft.WindowsAzure.Storage.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\PubTmp\Out\es\Microsoft.CodeAnalysis.resources.dll

@@ -261,3 +261,11 @@ C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\Con
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\ref\ControleFinanceiro.dll
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\ControleFinanceiro.pdb
 C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\obj\Release\net6.0\ControleFinanceiro.genruntimeconfig.cache
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Azure.Management.ResourceManager.Fluent.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Azure.Management.Sql.Fluent.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Azure.Management.Storage.Fluent.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.Rest.ClientRuntime.Azure.Authentication.dll
+C:\Users\pedri\Desktop\SISTEMAS\treino\ControleFinanceiro\bin\Release\net6.0\Microsoft.WindowsAzure.Storage.dll

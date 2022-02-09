@@ -5,12 +5,13 @@ URL: https://controlefinanceiroaluraapi.azure-api.net
 
 ENDPOINTS
 
-#AUTH
+AUTH
 POST https://controlefinanceiroaluraapi.azure-api.net/api/v1/account/login HTTP/1.1
 Content-Type: application/json
 {"id":0,"username":"string","password":"string","role":"string"}
 
-#RESUMO
+RESUMO
+
 GET https://controlefinanceiroaluraapi.azure-api.net/api/Resumo/{ano}/{mes} HTTP/1.1
 Authorization: Bearer TOKEN
 
